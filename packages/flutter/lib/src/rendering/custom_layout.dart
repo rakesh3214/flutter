@@ -54,7 +54,7 @@ class MultiChildLayoutParentData extends ContainerBoxParentData<RenderBox> {
 /// {@tool sample}
 ///
 /// Below is an example implementation of [performLayout] that causes one widget
-/// (the follower) to be the same size as another (the leader):
+/// (the follower) to be  same size as another (the leader):
 ///
 /// ```dart
 /// // Define your own slot numbers, depending upon the id assigned by LayoutId.
