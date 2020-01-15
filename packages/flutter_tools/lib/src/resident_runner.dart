@@ -1003,6 +1003,10 @@ abstract class ResidentRunner {
   void printHelp({ @required bool details });
 
   void printHelpDetails() {
+    globals.printStatus("Starting to dispay the details on terminal");
+    if (flutterDevices.any((FlutterDevice d) => d.device.supportScreenshot)) {
+        CommandHelp.s.print();
+    }
     if (supportsServiceProtocol) {
       globals.printStatus('You can dump the widget hierarchy of the app (debugDumpApp) by pressing "w".');
       globals.printStatus('To dump the rendering tree of the app (debugDumpRenderTree), press "t".');
